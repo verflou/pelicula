@@ -3,10 +3,20 @@ const mongoose = require("mongoose");
 
 //Creación del Schema Post
 const esquema = new mongoose.Schema({
-    nombre: {
-        type: String },
-    edad: {
+    Titulo: {
+        type: String,
+        required: [true] 
+    },
+    Autor: {
+        type: String,
+        required: [true],
+    },
+    Año: {
         type: Number,
+        required: [true],
+    },
+    Categoria: {
+        type: String,
         required: [true],
     }
 });
@@ -16,4 +26,3 @@ const Post = mongoose.model('Post', esquema);
 
 module.exports = Post;
 
- 
