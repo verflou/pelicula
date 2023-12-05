@@ -1,7 +1,7 @@
 const app = require("./app");
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://labanda:labanda123@servidor.qofnpbj.mongodb.net/?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://joaquin:Js46845585@basedd.m4bxt9j.mongodb.net/', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {

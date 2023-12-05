@@ -6,10 +6,6 @@ const app = express();
 const myRouter = require("./routes/myRouter");
 ;
 
-app.set("view engine", "ejs");
-
-app.set("views", path.join(__dirname, "views"));
-
 app.use(morgan("dev"));
 
 app.use(express.json());
