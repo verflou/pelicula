@@ -50,3 +50,26 @@ models
 exports.inicio = (req, res) => {
   res.status(200).render("home.ejs");
 };
+exports.crearPlaylist = (req, res) => {
+  res.status(200).render("home.ejs");
+};
+exports.obtenerPlaylist = (req, res) => {
+  res.status(200).render("home.ejs");
+};
+exports.borrarPlaylist = (req, res) => {
+  res.status(200).render("home.ejs");
+};
+exports.agregarPelicula = (req, res) => {
+  res.status(200).render("home.ejs");
+};
+exports.moverPelicula = (req, res) => {
+  res.status(200).render("home.ejs");
+
+};
+exports.borrarPelicula = (req, res) => {
+  res.status(200).render("home.ejs");
+
+};
+
+
+
