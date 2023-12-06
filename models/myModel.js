@@ -1,28 +1,17 @@
-//Modelo de ejemplo para alojar datos en una DB mongo
-const mongoose = require("mongoose");
+// myModel.js
+const mongoose = require('mongoose');
 
-//Creación del Schema Post
-const esquema = new mongoose.Schema({
-    Titulo: {
-        type: String,
-        required: [true] 
-    },
-    Autor: {
-        type: String,
-        required: [true],
-    },
-    Año: {
-        type: Number,
-        required: [true],
-    },
-    Categoria: {
-        type: String,
-        required: [true],
-    }
+const movieSchema = new mongoose.Schema({
+  titulo: {
+    type: String,
+    required: true,
+  },
+  año: {
+    type: Number,
+  },
+  // Puedes agregar más campos según sea necesario
 });
 
-//Creación del modelo Post
-const Post = mongoose.model('Post', esquema);
+const Movie = mongoose.model('Movie', movieSchema);
 
-module.exports = Post;
-
+module.exports = Movie;
